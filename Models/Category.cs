@@ -1,8 +1,12 @@
+using System.Collections.Generic;
+
+
 namespace VarejaoDoNene.Models
 {
-    public enum Category
+    public class Category
     {
-      Vegetables, Fruits , Sauces
+        public string CategoryName { get; set; }
+        public ICollection<Product> Products { get; set; }
 
     }
 }

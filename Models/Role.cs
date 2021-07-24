@@ -1,7 +1,14 @@
+using System.Collections.Generic;
+
 namespace VarejaoDoNene.Models
 {
-    public enum Role
+    public class Role
     {
-         User, Admin, Manager
+        public string RoleName { get; set; }
+
+        public string CPF { get; set; }
+        public ICollection<Account> Accounts { get; set; }
+
+        
     }
 }
